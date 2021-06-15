@@ -1,0 +1,7 @@
+Go TO 
+"/node_modules/@tensorflow-models/face-landmarks-detection/dist"
+and modify the function getInputTensorDimensions to return only tensor shape
+
+function getInputTensorDimensions$1(input) {
+    return [input.shape[0], input.shape[1]];
+}
